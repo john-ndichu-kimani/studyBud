@@ -1,11 +1,16 @@
-       <h3> Browse Topics</h3>
-        <hr>
-
-        <div>
-            <a href="{% url 'home'%}">All</a>
-        </div>
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles/main.css' %}">
+      <div class="sidebar">
+       <h3 class="sidebar-title"> Browse Topics</h3>
+          <hr>
+       <div class="topic-links">
+       <div>
+           <a href="{% url 'home'%}">All</a>
+       </div>
         {% for topic in topics%}
           <div>
             <a href="{% url 'home' %}?q={{topic.name}}">{{topic.name}}</a>
           </div>
         {% endfor%}
+      </div>
+      </div>

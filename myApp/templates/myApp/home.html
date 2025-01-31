@@ -1,13 +1,9 @@
 
 {% extends 'main.html' %}
-
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles/main.css' %}">
 {% block content %}
-<style>
-    .home-container{
-        display: grid;
-        grid-template-columns: 1fr 3fr 1fr;
-    }
-</style>
+
 
 <div class="home-container">
 
@@ -16,15 +12,18 @@
     </div>
 
     <div class="main-content">
+        <div class="main-content-title">
+        <div class="rooms-count">
         <h5>{{room_count}} rooms avalaible</h5>
-        <a href="{% url 'create-room'%}">Create Room</a>
-
-        <div>
+        </div>
+        <a href="{% url 'create-room'%}" class="btn">Create Room</a>
+        </div>
+        <div class="rooms-list">
            {% include 'myApp/feed_component.html' %}
         </div>
     </div>
 
-    <div>
+    <div class="activities-container">
        {% include 'myApp/activity_component.html' %}
     </div>
     

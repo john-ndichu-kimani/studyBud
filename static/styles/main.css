@@ -1,3 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color:aquamarine;
+    background-color: #ffffff;
+    font-family: Arial, fantasy;
+}
+
+.navbar{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #10002b;
+    box-shadow: 1px 1px 1px 1px #e8e8e8;
+}
+.logo{
+    text-decoration: none;
+    color:#ffff;
+}
+.search__input{
+    height: 50px;
+    width: 400px;
+    padding: 10px;
+    border: solid blueviolet 2px;
+    color: white;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.search__input:focus{
+    outline: none;
+}
+.btn{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color:blueviolet;
+    padding: 10px;
+    border-radius: 10px;
+}
+.sidebar{
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 1px 1px 1px 1px #f1f1f1;
+}
+.sidebar-title{
+    color: blueviolet;
+    margin-bottom: 10px;
+}
+.topic-links{
+    margin-top: 20px;
+}
+.topic-links a{
+    text-decoration: none;
+    color:#10002b;
+}
+.home-container{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+.main-content{
+    padding: 30px;
+    /*background-color: #fafafa;*/
+    background:linear-gradient(45deg, #f2f9fa, #f6f5f5) ;
+}
+.main-content-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rooms-count{
+    border: solid blueviolet 1.2px;
+    padding: 10px;
+    border-radius: 2px;
+}
+.rooms-list{
+    margin-top: 40px;
+}
+.room{
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.room-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.room-header a{
+    /*text-decoration: none;*/
+    color: blueviolet;
+}
+.room-content{
+    color: #313131;
+    margin: 20px 0;
 }
