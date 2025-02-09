@@ -1,5 +1,5 @@
 ﻿# StudyBud
-![Home](media/stydy_bud.png)
+![Home](media/study_bud.png)
 
 ## Getting Started 🔧
 
